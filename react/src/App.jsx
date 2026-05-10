@@ -24,7 +24,10 @@ function App() {
   return (
     <>
       <header className="topbar">
-        <a href="#inicio" className="brand">Julieta Vega Estilista</a>
+        <a href="#inicio" className="brand">
+          <img src="/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
+          <span>Julieta Vega Estilista</span>
+        </a>
         <nav>
           <a href="#servicios">Servicios</a>
           <a href="#color">Color</a>
