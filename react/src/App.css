@@ -11,7 +11,7 @@
 .eyebrow{text-transform:uppercase;letter-spacing:.11em;font-size:.76rem;color:#8c6c59;font-weight:700}
 h1{font-size:clamp(2rem,6vw,4rem);line-height:1.04;margin:.6rem 0 1rem}.lead{font-size:1.08rem;line-height:1.6;color:var(--muted)}
 .actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.35rem}
-.hero-card{background:linear-gradient(140deg,#fff,#f6ebe4);border:1px solid #ebdbce;border-radius:1rem;padding:1rem;box-shadow:0 12px 28px #2f292711}
+.hero-card{background:linear-gradient(140deg,#fff,#f6ebe4);border:1px solid #ebdbce;border-radius:1rem;padding:1rem;box-shadow:0 12px 28px #2f292711; max-width: 80%;margin: auto;}
 .hero-card p{margin:0 0 .75rem;display:grid;gap:.16rem}.hero-card p:last-child{margin:0}.hero-card strong{font-size:.93rem}.hero-card span{font-size:.9rem;color:var(--muted)}
 .btn{display:inline-block;background:linear-gradient(135deg,var(--rose),var(--champ));color:#fff;text-decoration:none;font-weight:600;padding:.78rem 1.05rem;border-radius:999px;border:1px solid #b88488;transition:.25s transform,.25s box-shadow}
 .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px #b88f5840}.btn-ghost{background:#fff;color:var(--ink)}.btn-small{padding:.55rem .8rem;font-size:.9rem}

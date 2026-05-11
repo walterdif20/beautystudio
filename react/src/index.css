@@ -2,3 +2,5 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 a { color: inherit; }
+.img-logo{max-width: 100%;max-height: 250px;} 
+.hero-card{}

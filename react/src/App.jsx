@@ -6,8 +6,8 @@ const whatsappUrl =
 const services = [
   { icon: 'scissors', title: 'Peluquería y cortes', text: 'Cortes femeninos, brushing y peinados para el día a día o eventos.' },
   { icon: 'palette', title: 'Color y rubios personalizados', text: 'Coloración, mechas y balayage con diagnóstico previo para cuidar la fibra capilar.' },
-  { icon: 'sparkles', title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
-  { icon: 'droplet', title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
+  { icon: 'droplet', title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
+  { icon: 'sparkles', title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
   { icon: 'handSparkles', title: 'Manos y pies', text: 'Beauty integral para resolver tu look completo en una sola visita.' },
   { icon: 'eye', title: 'Pestañas y mirada', text: 'Servicios para realzar la mirada con acabado prolijo y natural.' },
 ]
@@ -40,7 +40,6 @@ function App() {
     <>
       <header className="topbar">
         <a href="#inicio" className="brand">
-          <img src="/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
           <span>Julieta Vega Estilista</span>
         </a>
         <nav>
@@ -63,9 +62,9 @@ function App() {
             </div>
           </div>
           <aside className="hero-card" aria-label="Información destacada">
+            <img src="/walterdif20.github.io/beautystudio/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="img-logo" />
             <p><strong>Cita previa</strong><span>Atención por WhatsApp o MD.</span></p>
             <p><strong>Ubicación</strong><span>Calle 57 3137 local 1, Necochea.</span></p>
-            <p><strong>Señal pública</strong><span>Ágora: 4.9 con 57 reseñas.</span></p>
           </aside>
         </section>
 
