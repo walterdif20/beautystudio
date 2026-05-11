@@ -4,12 +4,12 @@ const whatsappUrl =
   'https://wa.me/5492262598259?text=Hola%20Julieta%2C%20quiero%20consultar%20por%20un%20turno%20en%20Beauty%20Studio.'
 
 const services = [
-  { icon: 'scissors', title: 'Peluquería y cortes', text: 'Cortes femeninos, brushing y peinados para el día a día o eventos.' },
-  { icon: 'palette', title: 'Color y rubios personalizados', text: 'Coloración, mechas y balayage con diagnóstico previo para cuidar la fibra capilar.' },
-  { icon: 'sparkles', title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
-  { icon: 'droplet', title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
-  { icon: 'handSparkles', title: 'Manos y pies', text: 'Beauty integral para resolver tu look completo en una sola visita.' },
-  { icon: 'eye', title: 'Pestañas y mirada', text: 'Servicios para realzar la mirada con acabado prolijo y natural.' },
+  { icon: 'fa-solid fa-scissors', title: 'Peluquería y cortes', text: 'Cortes femeninos, brushing y peinados para el día a día o eventos.' },
+  { icon: 'fa-solid fa-palette', title: 'Color y rubios personalizados', text: 'Coloración, mechas y balayage con diagnóstico previo para cuidar la fibra capilar.' },
+  { icon: 'fa-solid fa-wand-magic-sparkles', title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
+  { icon: 'fa-solid fa-droplet', title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
+  { icon: 'fa-solid fa-hand-sparkles', title: 'Manos y pies', text: 'Beauty integral para resolver tu look completo en una sola visita.' },
+  { icon: 'fa-regular fa-eye', title: 'Pestañas y mirada', text: 'Servicios para realzar la mirada con acabado prolijo y natural.' },
 ]
 
 const portfolioImages = [1, 2, 3, 4, 5, 6]
@@ -23,16 +23,7 @@ const faqs = [
 ]
 
 function ServiceIcon({ name }) {
-  const icons = {
-    scissors: <path d="M40.6 73.4c-6.9 0-12.6-5.7-12.6-12.6S33.7 48.2 40.6 48.2s12.6 5.7 12.6 12.6-5.7 12.6-12.6 12.6zm0-17.2a4.6 4.6 0 1 0 0 9.2 4.6 4.6 0 0 0 0-9.2zm46.8 17.2c-6.9 0-12.6-5.7-12.6-12.6S80.5 48.2 87.4 48.2s12.6 5.7 12.6 12.6-5.7 12.6-12.6 12.6zm0-17.2a4.6 4.6 0 1 0 0 9.2 4.6 4.6 0 0 0 0-9.2zM36.2 52.5 30 46.3 63.5 34l6 6L36.2 52.5zm46.3 0L49.2 40l6-6 33.5 12.3-6.2 6.2z" />,
-    palette: <path d="M64 24c-22.1 0-40 15.7-40 35.1 0 10.8 8.5 19.5 19.1 19.5h7.4c3 0 5.4 2.5 5.4 5.6v2.2c0 9.3 7.4 16.8 16.4 16.8 17.3 0 31.7-14.3 31.7-33.3C104 44 86.1 24 64 24zm-18 27.7a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm15-9.3a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm16.2 9.3a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm10.6 16.1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />,
-    sparkles: <path d="m58.8 26 6.4 15.5L80.8 48l-15.6 6.5L58.8 70l-6.4-15.5L36.8 48l15.6-6.5L58.8 26zm29.5 21.2 3.3 8.1 8.1 3.3-8.1 3.3-3.3 8.1-3.3-8.1-8.1-3.3 8.1-3.3 3.3-8.1zM34 58.8l4.6 11.2L49.8 74l-11.2 4.6L34 89.8l-4.6-11.2L18.2 74l11.2-4.6L34 58.8z" />,
-    droplet: <path d="M64 24c9.2 12.3 24 27.5 24 41.2 0 13.2-10.7 23.8-24 23.8s-24-10.7-24-23.8C40 51.5 54.8 36.3 64 24zm0 54.5c7.4 0 13.3-5.9 13.3-13.3 0-2.2 1.8-4 4-4s4 1.8 4 4c0 11.8-9.6 21.3-21.3 21.3-2.2 0-4-1.8-4-4s1.8-4 4-4z" />,
-    handSparkles: <path d="M30 56.5c0-2.8 2.2-5 5-5s5 2.2 5 5v11h2V44.8c0-2.8 2.2-5 5-5s5 2.2 5 5v16h2v-14c0-2.8 2.2-5 5-5s5 2.2 5 5v14h2v-10c0-2.8 2.2-5 5-5s5 2.2 5 5V72c0 14.4-11.6 26-26 26-10.6 0-20.1-6.5-24-16.5L30 68.6V56.5zm54.2-26.3 2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6 2.6-6.4z" />,
-    eye: <path d="M64 35c22.7 0 35.8 19 39.3 24.8.9 1.5.9 3.4 0 4.9C99.8 70.5 86.7 89.5 64 89.5S28.2 70.5 24.7 64.7a4.6 4.6 0 0 1 0-4.9C28.2 54 41.3 35 64 35zm0 42.5c11.3 0 20.5-9.2 20.5-20.5S75.3 36.5 64 36.5 43.5 45.7 43.5 57 52.7 77.5 64 77.5zm0-32.5A12 12 0 1 1 64 69a12 12 0 0 1 0-24z" />,
-  }
-
-  return <svg className="service-icon" viewBox="0 0 128 128" aria-hidden="true" focusable="false">{icons[name]}</svg>
+  return <i className={`service-icon ${name}`} aria-hidden="true" />
 }
 
 function App() {
