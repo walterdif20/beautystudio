@@ -109,11 +109,34 @@ function App() {
       </main>
 
       <footer id="contacto" className="footer">
-        <h2>Reservá tu turno en Julieta Vega Beauty Studio</h2>
-        <p>WhatsApp: <a href={whatsappUrl} target="_blank" rel="noreferrer">+54 2262 59-8259</a> · Tel: 2262598259</p>
-        <p>Calle 57 3137 local 1, Necochea, Buenos Aires · Horarios: a confirmar por WhatsApp</p>
-        <p><a href="https://www.instagram.com/julietavegaestilista/" target="_blank" rel="noreferrer">Instagram</a> · <a href="https://www.facebook.com/julietavegaestilista/" target="_blank" rel="noreferrer">Facebook</a></p>
-        <a className="btn" href={whatsappUrl} target="_blank" rel="noreferrer">Reservar ahora</a>
+        <div className="footer-top">
+          <p className="footer-kicker">Beauty Studio · Necochea</p>
+          <h2>Reservá tu turno en Julieta Vega Beauty Studio</h2>
+          <p className="footer-lead">Atención personalizada en peluquería, color y estética integral para realzar tu estilo con resultados naturales.</p>
+        </div>
+
+        <div className="footer-grid">
+          <div>
+            <h3>Contacto</h3>
+            <p>WhatsApp: <a href={whatsappUrl} target="_blank" rel="noreferrer">+54 2262 59-8259</a></p>
+            <p>Teléfono: 2262598259</p>
+          </div>
+          <div>
+            <h3>Dirección</h3>
+            <p>Calle 57 3137 local 1</p>
+            <p>Necochea, Buenos Aires</p>
+          </div>
+          <div>
+            <h3>Redes</h3>
+            <p><a href="https://www.instagram.com/julietavegaestilista/" target="_blank" rel="noreferrer">Instagram</a></p>
+            <p><a href="https://www.facebook.com/julietavegaestilista/" target="_blank" rel="noreferrer">Facebook</a></p>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>Horarios y disponibilidad: a confirmar por WhatsApp.</p>
+          <a className="btn" href={whatsappUrl} target="_blank" rel="noreferrer">Reservar ahora</a>
+        </div>
       </footer>
 
       <a className="sticky-wa" href={whatsappUrl} target="_blank" rel="noreferrer">Reservar por WhatsApp</a>
