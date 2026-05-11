@@ -25,7 +25,7 @@ function App() {
     <>
       <header className="topbar">
         <a href="#inicio" className="brand">
-          <img src="/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
+          <img src="/walterdif20.github.io/beautystudio/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
           <span>Julieta Vega Estilista</span>
         </a>
         <nav>
