@@ -4,13 +4,15 @@ const whatsappUrl =
   'https://wa.me/5492262598259?text=Hola%20Julieta%2C%20quiero%20consultar%20por%20un%20turno%20en%20Beauty%20Studio.'
 
 const services = [
-  { title: 'Peluquería y cortes', text: 'Cortes femeninos, brushing y peinados para el día a día o eventos.' },
-  { title: 'Color y rubios personalizados', text: 'Coloración, mechas y balayage con diagnóstico previo para cuidar la fibra capilar.' },
-  { title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
-  { title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
-  { title: 'Manos y pies', text: 'Beauty integral para resolver tu look completo en una sola visita.' },
-  { title: 'Pestañas y mirada', text: 'Servicios para realzar la mirada con acabado prolijo y natural.' },
+  { icon: '✂️', title: 'Peluquería y cortes', text: 'Cortes femeninos, brushing y peinados para el día a día o eventos.' },
+  { icon: '🎨', title: 'Color y rubios personalizados', text: 'Coloración, mechas y balayage con diagnóstico previo para cuidar la fibra capilar.' },
+  { icon: '✨', title: 'Tratamientos y alisados', text: 'Opciones para nutrición, brillo y control del frizz según tu tipo de cabello.' },
+  { icon: '🫧', title: 'Depilación definitiva', text: 'Servicio de estética para complementar tu rutina de cuidado personal.' },
+  { icon: '💅', title: 'Manos y pies', text: 'Beauty integral para resolver tu look completo en una sola visita.' },
+  { icon: '👁️', title: 'Pestañas y mirada', text: 'Servicios para realzar la mirada con acabado prolijo y natural.' },
 ]
+
+const portfolioImages = [1, 2, 3, 4, 5, 6]
 
 const faqs = [
   ['¿Cómo reservo un turno?', 'Podés escribir por WhatsApp o por mensaje directo en Instagram para coordinar día y horario.'],
@@ -25,7 +27,7 @@ function App() {
     <>
       <header className="topbar">
         <a href="#inicio" className="brand">
-          <img src="/walterdif20.github.io/beautystudio/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
+          <img src="/logo-julieta-vega.png" alt="Logo Julieta Vega Estilista" className="brand-logo" />
           <span>Julieta Vega Estilista</span>
         </a>
         <nav>
@@ -60,7 +62,7 @@ function App() {
 
         <section id="servicios" className="section">
           <h2>Servicios principales</h2>
-          <div className="cards">{services.map((s) => <article key={s.title}><h3>{s.title}</h3><p>{s.text}</p></article>)}</div>
+          <div className="cards">{services.map((s) => <article key={s.title}><span className="service-icon" aria-hidden="true">{s.icon}</span><h3>{s.title}</h3><p>{s.text}</p></article>)}</div>
         </section>
 
         <section id="color" className="editorial section">
@@ -83,9 +85,9 @@ function App() {
         </section>
 
         <section className="section gallery">
-          <h2>Portfolio listo para sumar trabajos reales</h2>
-          <p>La estructura queda preparada para incorporar fotos de coloración, peinados, pestañas, manos y pies sin cargar assets pesados en esta versión.</p>
-          <div className="placeholders"><div /><div /><div /></div>
+          <h2>Portfolio de trabajos</h2>
+          <p>Sumá tus fotos reales de coloración, peinados, pestañas, manos y pies en esta galería.</p>
+          <div className="placeholders">{portfolioImages.map((n) => <img key={n} src={`/portfolio/imagen${n}.jpg`} alt={`Trabajo de belleza ${n} de Julieta Vega Estilista`} loading="lazy" />)}</div>
         </section>
 
         <section className="section faq">
