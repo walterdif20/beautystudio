@@ -62,7 +62,7 @@ La web debe ser una landing estática one-page.
 
 Puede incluir:
 
-- Navbar
+- Navbar con logo imagen
 - Hero
 - Beneficios
 - Productos o servicios destacados
